@@ -1,7 +1,7 @@
 package javal_list_days;
 
 import java.util.ArrayList;
-
+import java.util.Collections;
 import java.util.List;
 
 
@@ -39,4 +39,16 @@ public String getDay(int dayIndex) {
     }
     return null;
 }
+
+public boolean dayExists(String day) {
+    return days.contains(day);
+}
+public void sortDaysAlphabetically() {
+    Collections.sort(days);
+}
+
+public void clearDaysList() {
+    days.clear();
+}
+
 }
