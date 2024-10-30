@@ -12,7 +12,7 @@ public WeekDaysManager() {
     this.days = new ArrayList<>();
 }
 public void createDaysList() {
-    
+    days.clear();
     days.add("Lunes");
     days.add("Martes");
     days.add("Miércoles");
@@ -34,10 +34,10 @@ public boolean removeDay(String day){
 }
 
 public String getDay(int dayIndex) {
-    if (dayIndex >= 0 && dayIndex < days.size()){
-        days.get(dayIndex);
+    if (dayIndex >= 0 && dayIndex < days.size()) {
+        return days.get(dayIndex);
     }
-    return null;
+    return null; 
 }
 
 public boolean dayExists(String day) {
