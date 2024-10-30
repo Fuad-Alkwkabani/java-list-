@@ -22,6 +22,21 @@ public void createDaysList() {
     days.add("Domingo");
 }
 
+public List<String> getDaylist() {
+return new ArrayList<>(days);
+}
 
+public int getDaysCount(){
+    return days.size();
+}
+public boolean removeDay(String day){
+    return days.remove(day);
+}
 
+public String getDay(int dayIndex) {
+    if (dayIndex >= 0 && dayIndex < days.size()){
+        days.get(dayIndex);
+    }
+    return null;
+}
 }
